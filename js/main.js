@@ -34,18 +34,18 @@ function mostrarMensaje(emocion) {
   }
 }
 
-let emocion = solicitarEmocion();
+let emocion = preguntarEmocion();
 
 mostrarMensaje(emocion);
 
 let respuesta = prompt("¿Quieres volver a utilizar el simulador? (sí/no)");
 
 while (respuesta.toLowerCase() === "sí") {
-  emocion = solicitarEmocion();
+  emocion = preguntarEmocion();
 
   mostrarMensaje(emocion);
 
   respuesta = prompt("¿Quieres volver a utilizar el simulador? (sí/no)");
 }
 
-console.log("Gracias usar el tracker de emociones. ¡Hasta pronto!");
+alert("Gracias usar el tracker de emociones. ¡Hasta pronto!");
